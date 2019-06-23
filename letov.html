@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="js.js"></script>
+<script type="text/javascript">
+function getRandomInt(min, max)
+{
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var cit = ["трогательным ножичком пытать свою плоть.","целеустремлЄнно набивать карманы мЄртвыми мышатами, живыми ху€ми, шоколадными конфетами и нерукотворными пиздюл€ми.","покончив с собой,уничтожить весь мир.","убивать в себе государство.","искать смысл.","гл€деть на небеса.","заколачивать дверь крестом.","не верить в анархию.","идти по плану.","долгую счастливую жизнь.","искать таких как €.","уходить из зоопарка.","лед€ному солнцу раскал€тьс€.","в кладбищенской конторе выпекать гроб.","в общественной столовой пожирать хлеб.","в трамва€х пробивать проездной талон","в подъездах экономить электросвет."];
+var put = ["поручил ", "запретил "];
+console.log("ѕутин " + put[getRandomInt(0, 1)] + cit[getRandomInt(0, cit.length-1)]);
+function gen()
+{
+$( "#butt" ).after("<br>" + "ѕутин " + put[getRandomInt(0, 1)] + cit[getRandomInt(0, cit.length-1)]);
+}
+</script>
+<style>
+	#butt {
+	color: #fff; 
+	background: ForestGreen; 
+	padding: 5px; 
+	border-radius: 3px;
+	border: 1px solid DarkGreen;
+        width: 30px;
+	} 
+	#butt:hover { 
+	background: Green; 
+	}
+        </style>
+</head>
+<body>
+<div id="butt" onclick="gen()"></div>
+</body>
+</html>
